@@ -1,0 +1,65 @@
+@import "./fonts";
+@import "./variables";
+@import "./components/contact-list";
+@import "./components/header";
+@import "./components/list";
+@import "./components/contact-form";
+@import "./components/footer";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(120deg, #5593de, #d278ae);
+}
+
+.btn {
+  font-size: 15px;
+  font-family: poppinslight;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 20px;
+  // padding-bottom: calc(10px + 3px);
+  // box-shadow: inset 0px -6px 0px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+}
+
+.input {
+  padding: 10px 15px;
+  border: 2px solid #777777;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.design-scroll {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ababab;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #686868;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
